@@ -4,12 +4,12 @@ int main() {
     // Declaração das variáveis para armazenar os dados da carta 1
     char numerodaCarta1[5], estado1, codigo1[4], nomeCidade1[50];
     int populacao1, pontosTuristicos1;
-    float area1, pib1, densidade1, pibPercapita1, superPoder1; // Adição da variável superPoder1
+    float area1, pib1, densidade1, pibPercapita1;
     
     // Declaração das variáveis para armazenar os dados da carta 2
     char numerodaCarta2[5], estado2, codigo2[4], nomeCidade2[50];
     int populacao2, pontosTuristicos2;
-    float area2, pib2, densidade2, pibPercapita2, superPoder2; // Adição da variável superPoder2
+    float area2, pib2, densidade2, pibPercapita2;
     
     // Entrada de dados para a carta 1
     printf("\nInsira os dados da carta 1\n");
@@ -33,7 +33,7 @@ int main() {
     // Cálculos para a carta 1
     densidade1 = populacao1 / area1;
     pibPercapita1 = (pib1 * 1e9) / populacao1; // O uso da notação científica foi necessário para o cálculo correto ser feito mesmo seu uso não tendo sido explicado nesse módulo
-    superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPercapita1 + (1 / densidade1); // O cálculo da densidade no super porder foi feito de forma inversa, pois quando menor a densidade maior o poder
+   
 
     // Entrada de dados para a carta 2
     printf("\nInsira os dados da carta 2\n");
@@ -57,8 +57,7 @@ int main() {
     // Cálculos para a carta 2
     densidade2 = populacao2 / area2;
     pibPercapita2 = (pib2 * 1e9) / populacao2; // O uso da notação científica foi necessário para o cálculo correto ser feito mesmo seu uso não tendo sido explicado nesse módulo
-    superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + pibPercapita2 + (1 / densidade2); // O cálculo da densidade no super porder foi feito de forma inversa, pois quando menor a densidade maior o poder
-
+   
     // Impressão dos dados da carta 1
     printf("\n--- Carta 1 ---\n");
     printf("Número: %s\n", numerodaCarta1);
